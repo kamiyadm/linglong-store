@@ -29,6 +29,7 @@ export PATH=%{_qt5_bindir}:$PATH
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=%{_prefix} \
       -DLIB_INSTALL_DIR:PATH=%{_libdir} \
+      -DCMAKE_BUILD_TYPE=Release \
       -DSHARE_INSTALL_PREFIX:PATH=%{_datadir} ..
 %make_build
 
@@ -36,7 +37,7 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=%{_prefix} \
 cd build
 %make_install INSTALL_ROOT=%{buildroot}
 
-%post -n linglong-bin
+%post -n linglong-installer
 xdg-mime default space.linglong.Installer.desktop x-scheme-handler/og
 
 %files
