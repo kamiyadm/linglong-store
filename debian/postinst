@@ -1,0 +1,2 @@
+#!/bin/bash
+xdg-mime default space.linglong.Installer.desktop x-scheme-handler/og
