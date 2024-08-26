@@ -1,5 +1,5 @@
 Name:           linglong-store
-Version:        1.3.3.7
+Version:        1.3.3.8
 Release:        1
 Summary:        Linglong package installer for web store
 License:        LGPLv3
@@ -51,5 +51,5 @@ xdg-mime default space.linglong.Installer.desktop x-scheme-handler/og
 %{_datadir}/applications/*.desktop
 
 %changelog
-* Thu Apr 25 2024 chenhuixing <chenhuixing@deepin.org> - 1.3.3.7-1
+* Thu Apr 25 2024 chenhuixing <chenhuixing@deepin.org> - 1.3.3.8-1
 - Init project
